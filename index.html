@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Your Survey Form</title>
+</head>
+<body>
+<h1 id="title">Owen Survey</h1>
+<p id="description">Hi, Welcome to my short Survey made from what I have recently learned from HTML lesson, hope you enjoy and help me out with any comments</p>
+<form id="survey-form">
+    <label id="name-label">Enter your name
+    <input placeholder="John Smith"id="name" required type="text"></input>
+    </label>
+    <label id="email-label">Enter your email<input required placeholder="email@gmail.com"required type="email" id="email"</input>
+    </label>
+    <label  required id="number-label">Enter your phone number<input required placeholder="Phone number" id="number" type="number" ></input>
+    </label>
+   <fieldset>
+       <legend>
+           What are you here for?
+           </legend>
+           <label> 
+        <input required name="work" value="1" type="radio">Work</input>
+        <input required name="work" value="2"type="radio">Personal</input>
+           </label>
+       </fieldset>
+    <fieldset required>
+        <legend>What do you think of the survey?></legend>
+       <select required id="dropdown">
+            <option required > Please Choose an option</option>
+            <option required value="Very Satisfied">Very Satisfied</option>
+            <option required value="Satisfied">Satisfied</option>
+            <option required value="Dissatisfied">Dissatisfied</option>
+            <option value="None">None</option>
+            </select>
+        </label>
+    </fieldset>
+    <fieldset required>
+        <legend required>Would you recommend this to others?</legend>
+        <label> <input  name="recommend"class="recommend" value="1"type="checkbox">Yes </input></label>
+        <label> <input  name="recommend"  class="recommend"  value="1"type="checkbox">No</input></label>
+        <label> <input  name="recommend"  class="recommend" value="1" type="checkbox">Maybe </input></label>
+        </fieldset>
+  
+        <label required for="comments">What Can I change?:</label>
+      <textarea required id="comments" name="comments" placeholder="Enter your comments"></textarea>
+        
+
+         <button type="submit" id="submit">Submit</button>
+
+</form>
+</body>
+</html>
